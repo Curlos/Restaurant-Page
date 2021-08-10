@@ -2,7 +2,7 @@ let map;
 let service;
 let infowindow;
 
-const initMap = () => {
+function initMap () {
   var onePieceRestaurant = new google.maps.LatLng(35.62768988248756, 139.7741834153436);
 
   infowindow = new google.maps.InfoWindow();
@@ -24,4 +24,3 @@ const initMap = () => {
     }
   });
 }
-

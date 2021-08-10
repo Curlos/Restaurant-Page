@@ -13,6 +13,7 @@ html, body {
     background-color: #001e55;
     overflow: hidden;
     text-align: center;
+    padding: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -62,10 +63,9 @@ html, body {
 }
 
 .menuElements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 .menuContainer {
@@ -73,10 +73,86 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  color: white;
+  background-color: #F2921E;
+  border-radius: 10px;
+  border: 3px solid white;
 }
 
 .menuItem {
-  width: 300px;
-  padding: 20px;
+  width: 250px;
+  margin: 0px 30px 30px 30px;
+}
+
+h3 {
+  background-color: #F2921E;
+  border-radius: 10px;
+  border: 3px solid white;
+  color: white;
+  
+}
+
+.contactElements {
+  text-align: center;
+}
+
+.contactContainer {
+  display: inline-block;
+  background-color: #F2921E;
+  width: 50%;
+  border-radius: 10px;
   margin: 20px;
+}
+
+.contactInfo {
+  text-align: left;
+  margin: 25px;
+}
+
+.contactContainerInfo {
+  display: flex;
+  width: 100%;
+}
+.contactRight {
+  margin: 25px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  /* The width is the width of the web page */
+}
+
+@media only screen and (max-width: 999px) {
+  .menuElements {
+    width: 600px;
+  }
+
+  .contactContainer {
+    width: 90%;
+  }
+
+  .contactContainerInfo {
+    flex-direction: column;
+  }
+
+  #map {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .menuElements {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .menuElements {
+    width: 300px;
+  }
 }
