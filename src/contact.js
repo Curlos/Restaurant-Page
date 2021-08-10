@@ -54,12 +54,13 @@ const displayContactInfo = () => {
     contactLeft.append(hoursDiv)
     contactLeft.append(phoneNumberDiv)
 
-    const mapDiv = document.createElement('div')
+    const mapDiv = document.createElement('img')
     mapDiv.setAttribute('id', 'map')
+    const img = document.createElement('img')
+    mapDiv.src = './images/restaurant.png'
 
     contactRight.append(mapDiv)
 
-    console.log(mapDiv)
 
     contactContainerInfo.append(contactLeft)
     contactContainerInfo.append(contactRight)
@@ -67,7 +68,7 @@ const displayContactInfo = () => {
     contactElements.append(contactContainer)
     content.append(contactElements)
 
-    initMap()
+    //initMap()
 
 }
 
