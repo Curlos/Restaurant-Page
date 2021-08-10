@@ -166,24 +166,4 @@ const getImagesAlcoholicDrinks = () => {
     ]
 }
 
-/*
-
-<div class="menuElements">
-
-            <h3>Alcoholic Drinks</h3>
-            <div class="menuContainer drinks">
-                <div class="menuItem">
-                    <img src="./menu/Alcoholic Drinks/going-merry-drink.png">
-                    Going Merry: "Yes! It's complete! With this, the pirate ship Going Merry is ready!" Milky Cocktail with a Black Currant Aroma
-                </div>
-                <div class="menuItem">
-                    <img src="./menu/Alcoholic Drinks/usopp-drink.png">
-                    Usopp: "For the sake of becoming a true warrior of the sea" Mixed Vegetable Juice Red Eye Kiwi Lassi
-                </div>
-            </div>
-
-        </div>
-
-        */
-
 export { displayMenu }

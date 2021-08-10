@@ -34,10 +34,15 @@ const displayHome = () => {
     orderNowLink.textContent = 'Order now'
     orderNow.addEventListener('click', displayMenu)
 
-    description.textContent = restaurantDescription
+    const descriptionTextNode = document.createTextNode(restaurantDescription)
+    const addressTextNode = document.createTextNode(addressText)
+    const hoursTextNode = document.createTextNode(hoursText)
+
+    description.append(descriptionTextNode)
     address.append(addressHeader)
+    address.append(addressTextNode)
     hours.append(hoursHeader)
-    address.textContent = addressText
+    hours.append(hoursTextNode)
     orderNow.append(orderNowLink)
 
     home.append(description)
@@ -51,5 +56,7 @@ const displayHome = () => {
 const restaurantDescription = "The One Piece themed-restaurant Baratie is dedicated the recreating the magical world of One Piece for anime fanatics. Based on the sea restaurant from the popular manga, Baratie is where Straw Hat Pirates member Sanji worked as a substitute head chef. Located on the rooftop garden of Fuji TV's building in Tokyo's Odaiba area, the restaurant is a can't miss for fans who've always wanted to try Sanji's cooking. There's also a life-size Sanji statue holding his latest dish for you to enjoy at the restaurant, so have your cameras and appetite ready!"
 
 const addressText = "Japan, 〒135-0091 Tokyo, Minato City, 港区Daiba, 2 Chome−4−4番8号 フジテレビ本社屋"
+
+const hoursText = "Mon-Sun: 10:30AM-8PM"
 
 export { displayHome }
